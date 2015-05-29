@@ -1,16 +1,16 @@
 <?php namespace datastat\FileManager\Models;
 
 use Illuminate\Database\Eloquent\Model;
-use Watson\Validating\ValidatingTrait;
+// use Watson\Validating\ValidatingTrait;
 
-use App\Traits\I18nModelTrait;
-use App\Exceptions\InternalModelErrorException;
+// use App\Traits\I18nModelTrait;
+// use App\Exceptions\InternalModelErrorException;
 
 class FileEloquent extends Model {
 
     use ValidatingTrait;
     
-    use I18nModelTrait;
+    // use I18nModelTrait;
     protected $casts = [
         'name' => 'json',
         'description' => 'json',

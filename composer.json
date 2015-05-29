@@ -11,7 +11,9 @@
     ],
     "require": {
         "php": ">=5.4.0",
-        "rackspace/php-opencloud": "^1.14"
+        "rackspace/php-opencloud": "^1.14",
+        "baum/baum" : "~1.1",
+        "watson/validating": "~1.0"
     },
     "require-dev": {
     },
