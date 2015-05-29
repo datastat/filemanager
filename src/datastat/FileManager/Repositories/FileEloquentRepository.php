@@ -2,14 +2,10 @@
 
 // use datastat\FileManager\Events\PartnerWasPlacedEvent;
 use datastat\FileManager\Models\FileEloquent;
-use App\Traits\EventCollector;
-use App\User;
 
 class FileEloquentRepository {
 
-    use EventCollector;
-
-    protected $partner;
+    protected $filemodel;
 
 
     /*
@@ -18,9 +14,9 @@ class FileEloquentRepository {
         to composer
     */
 
-    function __construct(FileEloquent $partner)
+    function __construct(FileEloquent $filemodel)
     {
-        $this->partner = $partner;
+        $this->filemodel = $filemodel;
     }
     
     public function create($opts = []){
@@ -45,10 +41,10 @@ class FileEloquentRepository {
 
     public function update($opts = []){
 
-        $partner = $this->get(['id' => array_get($opts, 'id')]);
-        $partner->fill(array_get($opts, 'attributes'));
-        // $partner->do_error(); for testing error response
-        $partner->saveOrFail();
+        $filemodel = $this->get(['id' => array_get($opts, 'id')]);
+        $filemodel->fill(array_get($opts, 'attributes'));
+        // $filemodel->do_error(); for testing error response
+        $filemodel->saveOrFail();
         
         return true;
     }
@@ -90,7 +86,7 @@ class FileEloquentRepository {
 
     public function getList()
     {
-        return $this->partner->get();
+        return $this->filemodel->get();
     }
 
     public function getListByUserId()
