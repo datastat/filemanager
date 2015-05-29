@@ -2,12 +2,8 @@
 
 // use datastat\FileManager\Events\PartnerWasPlacedEvent;
 use datastat\FileManager\Models\FolderEloquent;
-use App\Traits\EventCollector;
-use App\User;
 
 class FolderEloquentRepository {
-
-    use EventCollector;
 
     protected $model;
 
