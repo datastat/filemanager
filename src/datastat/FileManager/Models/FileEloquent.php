@@ -1,7 +1,7 @@
 <?php namespace datastat\FileManager\Models;
 
 use Illuminate\Database\Eloquent\Model;
-// use Watson\Validating\ValidatingTrait;
+use Watson\Validating\ValidatingTrait;
 
 // use App\Traits\I18nModelTrait;
 // use App\Exceptions\InternalModelErrorException;
