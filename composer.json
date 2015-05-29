@@ -1,0 +1,26 @@
+{
+    "name": "datastat/filemanager",
+    "description": "Filemanager for laravel 5",
+    "keywords" : ["laravel5","Filemanager"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Simon Mareš",
+            "email": "simon.mares@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.4.0",
+        "rackspace/php-opencloud": "^1.14"
+    },
+    "require-dev": {
+    },
+    "suggest": {
+    },
+    "autoload": {
+        "psr-0": {
+            "datastat\\FileManager": "src/"
+        }
+    },
+    "minimum-stability": "stable"
+}
