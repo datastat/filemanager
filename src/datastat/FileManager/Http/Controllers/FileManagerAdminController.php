@@ -14,10 +14,10 @@ use OpenCloud\Rackspace;
 
 class FileManagerAdminController extends Controller {
 
-	public function __construct(){
-		\Assets::add('admin-seed');
-		\Assets::add('admin-filemanager');
-	}
+	// public function __construct(){
+	// 	\Assets::add('admin-seed');
+	// 	\Assets::add('admin-filemanager');
+	// }
 	
 	/**
 	 * Display a listing of the resource.
